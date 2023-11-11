@@ -1,0 +1,41 @@
+/* style.css */
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carousel-item {
+    transition-duration: 5s;
+}
+
+.custom-card {
+    border: 1px solid #0719a1a2;
+    margin-bottom: 10px;
+}
+
+.custom-container {
+    border: 1px solid #e8e9f1a2;
+    padding: 10px;
+}
+
+.carousel-item {
+    transition-duration: 5s;
+}
+custom-img {
+    max-width: 25%;
+    height: auto;
+}
+.participant-img {
+    width: 70%;
+    height: 100px;
+    object-fit: cover;
+}
+.imgPuc-wider {
+    width: 100%; /* Ajuste este valor conforme necessário */
+}
+.img-margin-top {
+    margin-top: 10px; /* Ajuste este valor conforme necessário */
+}

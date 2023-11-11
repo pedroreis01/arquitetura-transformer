@@ -7,104 +7,25 @@
     <meta name="description" content="Caracterização do ChatGPT">
     <title>TP ES PUC 2023</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        .navbar {
-            background-color: #343a40;
-        }
-
-        .navbar-brand {
-            font-size: 24px;
-        }
-
-        .navbar-toggler-icon {
-            background-color: #fff;
-        }
-
-        .nav-link {
-            color: #fcf8f8;
-        }
-
-        h1,
-        h2 {
-            color: #343a40;
-        }
-
-        .card {
-            border: none;
-            background-color: #e8e9f1a2;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-title {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .card-text {
-            font-size: 16px;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .carousel-item {
-            transition-duration: 5s;
-        }
-
-        .custom-card {
-            border: 1px solid #0719a1a2;
-            margin-bottom: 10px;
-        }
-
-        .custom-container {
-            border: 1px solid #e8e9f1a2;
-            padding: 10px;
-        }
-
-        .carousel-item {
-            transition-duration: 5s;
-        }
-    </style>
+ 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
             <a class="navbar-brand" href="#">Trabalho Prático - Engenharia de Software</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link"
                             href="caracteristicas/caracterizacao.html">Caracterização</a></li>
-                    <li class="nav-item"><a class="nav-link" href="arquitetural/arquitetura.html">Arquitetura</a>
+                    <li class="nav-item"><a class="nav-link" href="arquitetural/arquitetura_inicio.html">Arquitetura</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="tecnologica/tecnologia.html">Tecnologias</a></li>
                 </ul>
@@ -112,10 +33,10 @@
         </div>
     </nav>
     <div class="container px-4 px-lg-5">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="800">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" >
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/image_01.png" class="d-block w-100" alt="Banner 1" style="max-height: 200px;">
+                    <img src="imagens/image_04.png" class="d-block w-100" alt="Banner 1" style="max-height: 200px;">
                 </div>
                 <div class="carousel-item">
                     <img src="imagens/img_02.png" class="d-block w-100" alt="Banner 2" style="max-height: 200px;">
@@ -138,8 +59,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3 mx-auto">
                     <div class="card custom-card">
-                        <img src="imagens/professora.PNG" class="card-img-top" alt="Foto da Professora"
-                            style="max-width: 25%; height: auto;">
+                        <img src="imagens/professora.PNG" class="participant-img d-block mx-auto img-margin-top" alt="FotoProfessora">
                         <div class="card-body text-center">
                             <h2 class="card-title nome-participante">Aline Brito</h2>
                         </div>
@@ -147,9 +67,9 @@
                 </div>
                 <div class="col-md-6 col-lg-3 mx-auto">
                     <div class="card custom-card">
-                        <img src="imagens/engsofPuc.png" class="card-img-top" alt="Foto da Professora"
-                            style="max-width: 100%; height: auto;">
-
+                        <img src="imagens/engsofPuc_1.png" class="participant-img d-block mx-auto img-margin-top imgPuc-wider" alt="LogEngPuc">
+                        <div class="card-body text-center">
+                            <h2 class="card-title nome-participante"> ICEI </h2>
                     </div>
                 </div>
             </div>
@@ -159,33 +79,33 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <div class="card custom-card">
-                        <img src="imagens/G_Evaristo.PNG" alt="Gustavo" style="max-width: 25%; height: auto;">
+                        <img src="imagens/G_Evaristo.PNG" alt="Gustavo" class="participant-img d-block mx-auto img-margin-top">
                         <div class="card-body text-center">
-                            <h2 class="card-title nome-participante">Gustavo Evaristo</h2>
+                            <h2 class="card-title nome-participante">Gustavo <br> Evaristo</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card custom-card">
-                        <img src="imagens/foto_lucas.jpg" alt="Lucas" style="max-width: 25%; height: auto;">
+                        <img src="imagens/foto_lucas.jpg" alt="Lucas" class="participant-img d-block mx-auto img-margin-top">
                         <div class="card-body text-center">
-                            <h2 class="card-title nome-participante">Lucas Perlatto</h2>
+                            <h2 class="card-title nome-participante">Lucas <br> Perlatto</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card custom-card">
-                        <img src="imagens/Mauricio.jpg" alt="Mauricio" style="max-width: 25%; height: auto;">
+                        <img src="imagens/Mauricio.jpg" alt="Mauricio" class="participant-img d-block mx-auto img-margin-top">
                         <div class="card-body text-center">
-                            <h2 class="card-title nome-participante">Maurício Fernandes</h2>
+                            <h2 class="card-title nome-participante">Maurício <br> Fernandes</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card custom-card">
-                        <img src="imagens/pedro.jpg" alt="Pedro" style="max-width: 25%; height: auto;">
+                        <img src="imagens/PedroR.jpg" alt="Pedro" class="participant-img d-block mx-auto img-margin-top">
                         <div class="card-body text-center">
-                            <h2 class="card-title nome-participante">Pedro Reis</h2>
+                            <h2 class="card-title nome-participante">Pedro <br> Reis</h2>
                         </div>
                     </div>
                 </div>
@@ -235,29 +155,7 @@
                 </div>
             </div>
         </div>
-        <div>
-            Fontes:
-            <br/>
-            https://www.openai.com/
-            <br/>
-            https://www.openai.com/research/
-            <br/>
-            https://trust.openai.com/
-            <br/>
-            https://techcrunch.com/
-            <br/>
-            https://www.wired.com/
-            <br/>
-            https://arxiv.org/pdf/2310.10449.pdf
-            <br/>
-            https://www.wired.com/story/chatgpt-is-reshaping-crowd-work/
-            <br/>
-            https://medium.com/@sreedevr/chatgpt-architecture-explained-7fc0cbb7426c  
-            <br/> 
-            https://dugas.ch/artificial_curiosity/GPT_architecture.html
-            <br/>
-            https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
-        </div>
+       
         <footer class="py-2 bg-dark">
             <div class="container px-4 px-lg-5">
                 <p class="m-0 text-center text-white">Copyright &copy; G5 - ChatGpt AS PUC 2023</p>
