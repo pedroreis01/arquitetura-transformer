@@ -89,3 +89,16 @@ custom-img {
     transform: scale(1.05); /* Aumenta ligeiramente o tamanho da imagem */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra para efeito de "levantamento" */
 }
+/* Estilo padrão para telas maiores */
+.navbar-brand {
+    font-size: 1.5rem; /* ou o tamanho que você está usando atualmente */
+    /* outras propriedades */
+}
+
+/* Estilo para telas menores */
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1rem; /* ou outro tamanho que se ajuste melhor */
+        /* outras propriedades, se necessário */
+    }
+}
