@@ -1,115 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <!-- Meta informações -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="">
-        <meta name="description" content="Caracterização do ChatGPT">
-        <title>"TP ES PUC 2023" </title>
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    
-        <!-- Estilos CSS -->
-        <!-- Link para o Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Folha de estilo personalizada -->
-        <link href="css\styles.css" rel="stylesheet">
-    </head>
-     <!-- Responsive navbar-->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container px-5">
-            <a class="navbar-brand" href="#!">Trabalho Prático - Engenharia de Software</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../caracteristicas/caracterizacao.html">Caracterização</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../arquitetural/arquitetura_inicio.html">Arquitetura</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../tecnologica/tecnologia.html">Tecnologias</a></li>
-                </ul>
-                <button type="button" class="btn btn-secondary" onclick="window.history.back()">Voltar</button>
-                
-            </div>
+
+<head>
+    <!-- Meta informações -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="Caracterização do ChatGPT">
+    <title>"TP ES PUC 2023" </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Estilos CSS -->
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Folha de estilo personalizada -->
+    <link href="css\styles.css" rel="stylesheet">
+</head>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#!">Trabalho Prático - Engenharia de Software</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="requisitos.html">Requisitos</a></li>
+                <li class="nav-item"><a class="nav-link" href="decisoes.html">Decisões</a></li>
+                <li class="nav-item"><a class="nav-link" href="atualizacoes.html">Atualização</a></li>
+            </ul>
         </div>
-    </nav>
-    <!-- Page Content-->
-   <!-- Tópicos sobre o ChatGPT -->
-   <div class="row my-5">
+        <button type="button" class="btn btn-secondary" onclick="window.history.back()">Voltar</button>
+
+    </div>
+
+</nav>
+<!-- Tópicos sobre o ChatGPT -->
+<div class="row my-5">
     <div class="col-lg-12 mx-auto px-5">
         <h1 class="font-weight-light text-center">Arquitetura do ChatGPT</h1>
-        <p>
-            <strong>A arquitetura do ChatGPT é baseada em um modelo de linguagem transformador pré-treinado.</strong> Os transformadores são um tipo de rede neural que são particularmente eficazes para tarefas de linguagem natural, como tradução, resumo e geração de texto.
-        </p>
-        <br>
-        <p>
-            <strong>O ChatGPT é treinado em um conjunto de dados massivo de texto e código.</strong> Esse conjunto de dados inclui texto de livros, artigos, código-fonte e outros tipos de conteúdo. O treinamento do ChatGPT leva várias semanas e requer uma grande quantidade de poder de computação.
-        </p>
-        <br>
-        <p>
-            <strong>A arquitetura do ChatGPT é composta de quatro componentes principais:</strong>
-        </p>
-        <br>
-        <p>
-            <strong>O codificador:</strong> O codificador é responsável por converter o texto de entrada em um vetor de representação. Esse vetor é uma representação numérica do texto que pode ser entendida pelo transformador.
-        </p>
-        <br>
-        <p>
-            <strong>O transformador:</strong> O transformador é o componente central do ChatGPT. É responsável por aprender as relações entre as palavras no texto de entrada.
-        </p>
-        <br>
-        <p>
-            <strong>O decodificador:</strong> O decodificador é responsável por gerar o texto de saída. Ele usa o vetor de representação do codificador para gerar uma sequência de palavras que sejam significativas e coerentes.
-        </p>
-        <br>
-        <p>
-            <strong>O modelo de linguagem:</strong> O modelo de linguagem é responsável por melhorar a qualidade da saída do ChatGPT. Ele usa um conjunto de dados de texto e código para aprender como gerar texto que seja natural e fluido.
-        </p>
-        <br>
-        <p>
-            <strong>A arquitetura do ChatGPT é ilustrada na figura abaixo:</strong>
-        </p>
 
-        <a href="https://www.analyticsvidhya.com/blog/2023/03/power-of-visual-chatgpt-conversations-with-ai-and-images/" target="_blank">
-            <img src="../imagens/arquitetura-do-sistema-visual-ChatGPT-scaled.webp" class="img-fluid" style="width: 30%;" alt="Arquitetura do Sistema Visual ChatGPT">
-        </a>
+        <div class="container">
 
-        <p>
-            <strong>A arquitetura do sistema ChatGPT atualmente inclui várias ferramentas que permitem uma interação rica e multimodal:</strong>
-        </p>
-        <br>
-        <p>
-            <strong>DALL·E:</strong> Ferramenta de geração de imagens que permite aos usuários criar imagens a partir de descrições textuais usando o modelo DALL·E 3.
-        </p>
-        <br>
-        <p>
-            <strong>Python:</strong> Um ambiente de execução de código Python para realizar cálculos, análises de dados e visualizações.
-        </p>
-        <br>
-        <p>
-            <strong>Browser:</strong> Um navegador interno que permite pesquisar informações na web, acessar e citar conteúdo de páginas da internet.
-        </p>
-        <br>
-        <p>
-            <strong>Processamento de Imagens:</strong> A habilidade de interpretar imagens para auxiliar na resolução de problemas, planejamento de refeições ou análise de dados visuais​​.
-        </p>
-        <br>
-        <p>
-            <strong>Geração de Imagens:</strong> A capacidade de criar novas imagens, como logos e cenas fotorrealistas, através de descrições fornecidas aos ChatGPT​​.
-        </p>
-        <br>
-        <p>
-            <strong>Funcionalidade de Voz:</strong> A introdução da interação por voz para conversas em tempo real, útil para contar histórias ou resolver debates​​.
-        </p>
+            <strong>A arquitetura do ChatGPT é baseada em um modelo de linguagem transformador pré-treinado.</strong> Os
+            transformadores são um tipo de rede neural que são particularmente eficazes para tarefas de linguagem
+            natural, como tradução, resumo e geração de texto.
+            </p>
+            <br>
+            <p>
+                <strong>O ChatGPT é treinado em um conjunto de dados massivo de texto e código.</strong> Esse conjunto
+                de dados inclui texto de livros, artigos, código-fonte e outros tipos de conteúdo. O treinamento do
+                ChatGPT leva várias semanas e requer uma grande quantidade de poder de computação<sup><a
+                        href="https://www.zup.com.br/blog/chatgpt">1</a></sup>.
+            </p>
+
+            <br>
+            <p>
+                <strong>A arquitetura do ChatGPT é composta de quatro componentes principais:</strong>
+
+                <br>
+            <p>
+                <strong>O codificador:</strong> O codificador é responsável por converter o texto de entrada em um vetor
+                de representação. Esse vetor é uma representação numérica do texto que pode ser entendida pelo
+                transformador.
+            </p>
+            <br>
+            <p>
+                <strong>O transformador:</strong> O transformador é o componente central do ChatGPT. É responsável por
+                aprender as relações entre as palavras no texto de entrada.
+            </p>
+            <br>
+            <p>
+                <strong>O decodificador:</strong> O decodificador é responsável por gerar o texto de saída. Ele usa o
+                vetor de representação do codificador para gerar uma sequência de palavras que sejam significativas e
+                coerentes.
+            </p>
+            <br>
+            <p>
+                <strong>O modelo de linguagem:</strong> O modelo de linguagem é responsável por melhorar a qualidade da
+                saída do ChatGPT. Ele usa um conjunto de dados de texto e código para aprender como gerar texto que seja
+                natural e fluido.
+            </p>
+            <br>
+            <div class="text-center">
+                <p>
+                    <strong>A arquitetura do ChatGPT é ilustrada na figura abaixo:</strong>
+                </p>
+                <div id="myImageContainer" class="image-container">
+                    <img src="../imagens/DALLE2023_arquitetura.png" class="img-fluid mx-auto d-block"
+                        style="width: 30%;" alt="Arquitetura do Sistema ChatGPT">
+                </div>
+            </div>
+
+            <p>
+                <strong>A arquitetura do ChatGPT é ilustrada na figura abaixo:</strong>
+            </p>
+            <p>
+                <strong>DALL·E:</strong> Ferramenta de geração de imagens que permite aos usuários criar imagens a
+                partir de descrições textuais usando o modelo DALL·E 3.
+            </p>
+            <br>
+            <p>
+                <strong>Python:</strong> Um ambiente de execução de código Python para realizar cálculos, análises
+                de dados e visualizações.
+            </p>
+            <br>
+            <p>
+                <strong>Browser:</strong> Um navegador interno que permite pesquisar informações na web, acessar e
+                citar conteúdo de páginas da internet.
+            </p>
+            <br>
+            <p>
+                <strong>Processamento de Imagens:</strong> A habilidade de interpretar imagens para auxiliar na
+                resolução de problemas, planejamento de refeições ou análise de dados visuais​​.
+            </p>
+            <br>
+            <p>
+                <strong>Geração de Imagens:</strong> A capacidade de criar novas imagens, como logos e cenas
+                fotorrealistas, através de descrições fornecidas aos ChatGPT​​.
+            </p>
+            <br>
+            <p>
+                <strong>Funcionalidade de Voz:</strong> A introdução da interação por voz para conversas em tempo
+                real, útil para contar histórias ou resolver debates​​.
+            </p>
+        </div>
+
+        <footer class="py-2 bg-dark">
+            <div class="container px-4 px-lg-5">
+                <p class="m-0 text-center text-white">Copyright &copy; G5 - ChatGpt AS PUC 2023</p>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('myImageContainer').onclick = function () {
+                this.style.transform = this.style.transform ? '' : 'scale(2)';
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
 </div>
-<footer class="py-2 bg-dark">
-    <div class="container px-4 px-lg-5">
-        <p class="m-0 text-center text-white">Copyright &copy; G5 - ChatGpt AS PUC 2023</p>
-         </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-

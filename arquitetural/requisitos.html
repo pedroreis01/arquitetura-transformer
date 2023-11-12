@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <!-- Meta informações -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="">
-        <meta name="description" content="Caracterização do ChatGPT">
-        <title>"TP ES PUC 2023" </title>
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    
-        <!-- Estilos CSS -->
-        <!-- Link para o Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Folha de estilo personalizada -->
-        <link href="css\styles.css" rel="stylesheet">
-    </head>
-     <!-- Responsive navbar-->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<head>
+    <!-- Meta informações -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="Requisitos do ChatGPT">
+    <title>TP ES PUC 2023</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Estilos CSS -->
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Folha de estilo personalizada -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
             <a class="navbar-brand" href="#!">Trabalho Prático - Engenharia de Software</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../caracteristicas/caracterizacao.html">Caracterização</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../arquitetural/arquitetura_inicio.html">Arquitetura</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../tecnologica/tecnologia.html">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arquitetura.html">Arquitetura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="decisoes.html">Decisões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="atualizacoes.html">Atualizações</a></li>
                 </ul>
-                
             </div>
             <button type="button" class="btn btn-secondary" onclick="window.history.back()">Voltar</button>
         </div>
     </nav>
-    <!-- Page Content-->
-   <!-- Tópicos sobre o ChatGPT -->
-   <div class="row my-5">
-    <div class="col-lg-12 mx-auto px-5">
-        <h1 class="font-weight-light text-center">Requisitos do ChatGPT</h1>
-       
-    </div>
-</div>
-<footer class="py-2 bg-dark">
-    <div class="container px-4 px-lg-5">
-        <p class="m-0 text-center text-white">Copyright &copy; G5 - ChatGpt AS PUC 2023</p>
-    </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Page Content-->
+    <div class="container my-5">
+        <!-- Título e Lista de Requisitos -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="font-weight-light text-center">Requisitos do ChatGPT</h1>
+                <p>Os requisitos importantes para o sistema ChatGPT incluem:</p>
+
+                <ul>
+                    <li><strong>Desempenho:</strong> O sistema deve ser capaz de fornecer respostas rápidas e precisas, mesmo sob cargas pesadas.</li>
+                    <li><strong>Escalabilidade:</strong> O sistema deve ser capaz de escalar para atender ao crescimento do número de usuários e do volume de dados.</li>
+                    <li><strong>Segurança:</strong> O sistema deve ser protegido contra ameaças e vulnerabilidades.</li>
+                    <li><strong>Privacidade:</strong> O sistema deve preservar a privacidade dos usuários, especialmente em relação ao tratamento de dados sensíveis.</li>
+                    <li><strong>Qualidade de resposta:</strong> O sistema deve gerar respostas precisas e relevantes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+        <div class="container px-4 px-lg-5">
+            <p class="m-0 text-center text-white">Copyright &copy; G5 - ChatGpt AS PUC 2023</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
