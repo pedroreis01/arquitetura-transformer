@@ -2,9 +2,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     color: #333;
-    padding: 20px;
+    /* padding: 20px; */
+}
+
+
+body nav {
+    margin-bottom: 20px;
 }
 
 p {
@@ -21,7 +26,7 @@ footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 .carousel-item {
